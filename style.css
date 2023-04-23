@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1,
@@ -85,4 +85,45 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 76px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 25px;
+  }
+
+  .button-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .email-link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
 }
